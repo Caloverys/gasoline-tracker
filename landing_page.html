@@ -7,7 +7,7 @@
       }
       #global_symbol{
         width: 30vw;
-         filter: drop-shadow(10px 20px 20px rgba(200, 200, 200, 0.4));
+         filter: drop-shadow(15px 25px 25px rgba(220, 220, 220, 0.5));
       }
       .vertical-center{
         display: flex;
@@ -61,6 +61,9 @@
         width: 35vw;
        }
        .middle-font{
+        font-size: 24px;
+       }
+       .small-font{
         font-size: 17.5px;
        }
        .middle-vert-margin{
@@ -79,6 +82,33 @@
        .system-ui-font{
         font-family:system-ui;
        }
+        .blue_background{
+          background: #2563eb;
+        }
+        .white_background{
+          background: white;
+        }
+        .border_none{
+          border: none;
+        }
+        .middle-hor-margin{
+        margin-left:2%;
+        margin-right:2%;
+        }
+        .grey-color{
+          color: rgb(55 65 81);
+        }
+        .big-padding{
+          padding: 2% 6%;
+        }
+        .lower-pos{
+          position: relative;
+          top: 2.5vh;
+        }
+        .small-border-radius{
+          border-radius: 6px;
+        }
+
     </style>
   </head>
   <body>
@@ -175,15 +205,20 @@
  </div>
 <div id='icon_container'  >
 <svg class='white-color' xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true" class="w-10 h-10 text-white p-1 bg-accent-1 rounded-full"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
-<div class='white-color bigger-font'>Gasoline Tracker</div>
+<div class='white-color middle-font bold-text'>Gasoline Tracker</div>
 </div>
 
 <div id='content'>
    <h2 class='bold-text bigger-font white-color middle-vert-margin system-ui-font'>Save the enviorment</h2>
    <h2 class='bold-text bigger-font white-color middle-vert-margin system-ui-font' >Save your money</h2>
-    <p class='white-color middle-font middle-letter-spacing hight-line-height'>
+    <p class='white-color small-font middle-letter-spacing hight-line-height'>
       Gasoline tracker is an application for tracking gasoline usage. It helps user for tracking their weekly, monthly and yearly gasoline usage, gasoline expenditure and vehicle usage. Feel annoyed about high gasoline expenditure and non enviromental friendly? Start now!
     </p>
+    <div>
+    <button class='small-border-radius lower-pos white-color middle-hor-margin blue_background border_none middle-font big-padding'> Start </button>
+    <button class='small-border-radius lower-pos grey-color middle-hor-margin white_background border_none middle-font big-padding'> Learn More</button>
+     </div>
+
 </div>
 
 
